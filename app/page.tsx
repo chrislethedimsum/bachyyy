@@ -1,64 +1,67 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="flex flex-col min-h-screen bg-white">
+      {/* Header/Navigation */}
+      {/* <header className="border-gray-200 bg-white fixed bottom-0 z-50">
+        <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex items-center">
+          <div className="flex items-center">
+          </div>
+          <ul className="hidden md:flex flex-1 items-center gap-100">
+            <li>
+              <a href="#products" className="text-sm font-medium text-gray-700 hover:text-black transition">
+                ÂM THANH
+              </a>
+            </li>
+
+            <li className="ml-auto">
+              <a href="#features" className="text-sm font-medium text-gray-700 hover:text-black transition">
+                HÌNH ẢNH
+              </a>
+            </li>
+          </ul>
+          <button className="md:hidden text-gray-700">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </nav>
+      </header> */}
+
+      {/* Hero Section */}
+      <main className="flex-1">
+        <section
+          className="min-h-screen
+  max-w-7xl mx-auto
+  px-6 lg:px-8
+  grid grid-cols-1 lg:grid-cols-2
+  gap-0 lg:gap-12
+  items-stretch lg:items-center"
+        >
+          {/* Left Content */}
+          <div className="flex flex-col h-full">
+            {/* Middle content – centered vertically */}
+            <div className="flex flex-col justify-center flex-1 space-y-4">
+              <h1 className="w-fit p-2 text-5xl lg:text-6xl font-bold text-white bg-black">bachyyy</h1>
+              <h2 className="w-fit p-2 text-5xl lg:text-6xl text-white bg-black">coming soon</h2>
+            </div>
+
+            {/* Bottom labels */}
+            <div className="flex items-end justify-between pb-0 lg:pb-2">
+              <a href="https://www.youtube.com/channel/UC7ztzTvvuirIMMcmUxCaV4A" className="text-sm pb-30 lg:pb-0 font-medium text-gray-700 hover:text-black transition">
+                ÂM THANH
+              </a>
+
+              <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BA%B7ng_%C4%90%C3%ACnh_H%C6%B0ng" className="text-lg lg:text-sm font-medium text-gray-700 hover:text-black transition">
+                HÌNH ẢNH
+              </a>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="h-96 lg:h-full min-h-96 bg-gradient-to-br from-green-200 via-green-100 to-green-50 shadow-lg overflow-hidden">
+            <div className="w-full h-full bg-[url('/imgs/art.jpg')] bg-cover bg-center" />
+          </div>
+        </section>
       </main>
     </div>
   );

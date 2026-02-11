@@ -39,6 +39,10 @@ export default function IntroOverlay() {
     }
 
     function tick() {
+      const container = containerRef.current;
+      const dvd = dvdRef.current;
+      if (!container || !dvd) return;
+
       const cont = container.getBoundingClientRect();
       const rect = dvd.getBoundingClientRect();
 

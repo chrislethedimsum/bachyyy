@@ -1,6 +1,9 @@
+import IntroOverlay from "@/app/IntroOverlay";
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <IntroOverlay />
       {/* Header/Navigation */}
       {/* <header className="border-gray-200 bg-white fixed bottom-0 z-50">
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex items-center">
@@ -63,6 +66,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <audio src="audio/34953_080226_rockman.mp3" autoPlay></audio>
     </div>
   );
 }

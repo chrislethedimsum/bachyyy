@@ -34,11 +34,11 @@ export default function Home() {
       <main className="flex-1">
         <section
           className="min-h-screen
-  max-w-7xl mx-auto
-  px-6 lg:px-8
-  grid grid-cols-1 lg:grid-cols-2
-  gap-0 lg:gap-12
-  items-stretch lg:items-center"
+            max-w-7xl mx-auto
+            px-6 lg:px-8
+            grid grid-cols-1 lg:grid-cols-2
+            gap-0 lg:gap-12
+            items-stretch lg:items-center"
         >
           {/* Left Content */}
           <div className="flex flex-col h-full">
@@ -50,23 +50,37 @@ export default function Home() {
 
             {/* Bottom labels */}
             <div className="flex items-end justify-between pb-0 lg:pb-2">
-              <a href="https://www.youtube.com/channel/UC7ztzTvvuirIMMcmUxCaV4A" className="text-sm pb-30 lg:pb-0 font-medium text-gray-700 hover:text-black transition">
+              <a
+                href="https://www.youtube.com/channel/UC7ztzTvvuirIMMcmUxCaV4A"
+                className="text-sm pb-30 lg:pb-0 font-medium text-gray-700 hover:text-black transition"
+              >
                 ÂM THANH
               </a>
 
-              <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BA%B7ng_%C4%90%C3%ACnh_H%C6%B0ng" className="text-lg lg:text-sm font-medium text-gray-700 hover:text-black transition">
+              <a
+                href="https://vi.wikipedia.org/wiki/%C4%90%E1%BA%B7ng_%C4%90%C3%ACnh_H%C6%B0ng"
+                className="text-lg lg:text-sm font-medium text-gray-700 hover:text-black transition"
+              >
                 HÌNH ẢNH
               </a>
             </div>
           </div>
-
           {/* Right Image */}
-          <div className="h-96 lg:h-full min-h-96 bg-gradient-to-br from-green-200 via-green-100 to-green-50 shadow-lg overflow-hidden">
+          <div className="relative h-96 lg:h-full min-h-96 bg-gradient-to-br from-green-200 via-green-100 to-green-50 shadow-lg overflow-visible">
             <div className="w-full h-full bg-[url('/imgs/art.jpg')] bg-cover bg-center" />
+            <div
+              className="flex justify-end
+                text-sm 
+                text-black lg:font-bold
+                lg:absolute lg:right-[-40] lg:bottom-5
+                lg:[writing-mode:vertical-rl]
+                lg:text-2xl lg:tracking-widest"
+            >
+              34953_080226_rockman.mp3
+            </div>
           </div>
         </section>
       </main>
-      <audio src="audio/34953_080226_rockman.mp3" autoPlay></audio>
     </div>
   );
 }

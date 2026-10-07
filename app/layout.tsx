@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
+import Nav from '@/app/ui/nav';
 
 const newFont = localFont({
   src: [
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={newFont.className}
       >
+        <Nav />
         {children}
       </body>
     </html>
